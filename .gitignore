@@ -1,0 +1,22 @@
+userbot.code-workspace
+package/*
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+.Icon
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+*.swp
+*.swo
+*~
+
+# Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.lnk
+*.lnk

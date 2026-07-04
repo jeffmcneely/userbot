@@ -1,0 +1,21 @@
+version = 0.1
+
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "userbot-stack"
+s3_bucket = "lambda-deployments-ACCOUNT_ID"
+s3_prefix = "userbot"
+region = "us-east-1"
+confirm_changeset = true
+capabilities = "CAPABILITY_NAMED_IAM"
+parameter_overrides = "Prefix=userbot"
+
+[default.build]
+[default.build.parameters]
+cached = true
+parallel = true
+
+[default.local_start_api]
+[default.local_start_api.parameters]
+port = 3000
